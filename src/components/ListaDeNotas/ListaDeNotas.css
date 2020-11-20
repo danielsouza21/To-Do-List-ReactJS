@@ -1,0 +1,15 @@
+.lista__wrapper {
+  margin-top: 30px;
+  width: 80vw;
+  align-items: center;
+  justify-content: center;
+}
+
+#plot-notas {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

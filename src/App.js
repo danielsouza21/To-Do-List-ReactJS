@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+
+import "./App.css";
+// import classNames from "classnames";
+
+import ListaDeNotas from "./components/ListaDeNotas";
+import FormularioCadastro from "./components/FormularioCadastro";
 
 function App() {
+  document.title = "ToDoList";
+
+  const [Notes, setNotes] = useState([]);
+
+  function criarNota(titulo, nota) {
+    let aux = Notes;
+    aux.push({ titulo: titulo, nota: nota });
+
+    setNotes(aux);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FormularioCadastro criarNota={criarNota}></FormularioCadastro>
+      <ListaDeNotas notes_array={Notes}></ListaDeNotas>
     </div>
   );
 }

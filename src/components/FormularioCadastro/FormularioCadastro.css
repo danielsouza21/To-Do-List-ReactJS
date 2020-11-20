@@ -1,0 +1,33 @@
+.cadastro__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 10px;
+  width: 50%;
+  height: 110px;
+}
+
+.cadastro__wrapper input {
+  width: 100%;
+  /* margin: 5px; */
+  border-radius: 5px;
+}
+.cadastro__wrapper textarea {
+  width: 100%;
+  /* margin: 5px; */
+  border-radius: 5px;
+}
+
+.cadastro__wrapper button {
+  /* margin-top: 5px; */
+}
