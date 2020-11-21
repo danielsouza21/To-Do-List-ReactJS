@@ -1,5 +1,7 @@
 # Getting Started with ReactJS App (jsx)
 
+Aplicação de estudos via projeto pessoal de uma lista de tarefas
+
 <h4 align="center">
     <img alt="ToDoGif" title="ToDoReactJSf" src="./src/assets/demonstração.gif" width="750px" />
 </h4>
