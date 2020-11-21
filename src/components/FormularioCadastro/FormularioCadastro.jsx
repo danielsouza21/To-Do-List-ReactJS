@@ -17,6 +17,9 @@ function FormularioCadastro({criarNota}) {
         e.preventDefault();
         e.stopPropagation();
         criarNota(Title_note, Text_note);
+        
+        setTitle_note("");
+        setText_note("");
     }
 
     const [Title_note, setTitle_note] = useState("");
@@ -24,8 +27,8 @@ function FormularioCadastro({criarNota}) {
 
   return (
       <form className="formulario">
-        <input type="text" placeholder="Titulo" onChange={handleTitleChange}></input>
-        <textarea placeholder="Escreva sua nota" onChange={handleTextChange}></textarea>
+        <input value={Title_note} type="text" placeholder="Titulo" onChange={handleTitleChange}></input>
+        <textarea value={Text_note} placeholder="Escreva sua nota" onChange={handleTextChange}></textarea>
         <button onClick={SubmitClick}>Criar nota</button>
       </form>
   );

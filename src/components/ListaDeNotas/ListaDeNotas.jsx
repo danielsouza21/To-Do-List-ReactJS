@@ -1,19 +1,27 @@
 import React from 'react';
-// import classNames from "classnames";
 import Nota from "../Notas"
 
 import "./ListaDeNotas.css"
 
 // import { Container } from './styles';
 
-function ListaDeNotas({notes_array}) {  
+function ListaDeNotas({notes_array, deletarNota}) {  
 
     function RenderNotas(notes){
         let id = 1;
         let components = [];
         
         notes.forEach(element => {
-            components.push(<li key={id++}><Nota tipo="Tipo1" nota={element.nota} titulo={element.titulo}></Nota></li>);
+            components.push(
+              <li key={id++}>
+                <Nota
+                  index={id - 1}
+                  deletarNota={deletarNota}
+                  nota={element.nota}
+                  titulo={element.titulo}
+                ></Nota>
+              </li>
+            );
         });
 
         return components;

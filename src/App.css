@@ -1,5 +1,9 @@
-.conteudo {
+.wrapper {
   display: flex;
+}
+
+.conteudo {
+  flex-grow: 3;
 }
 
 :root {
