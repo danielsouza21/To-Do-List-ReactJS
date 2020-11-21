@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./App.css";
 // import classNames from "classnames";
@@ -7,33 +7,21 @@ import ListaDeNotas from "./components/ListaDeNotas";
 import FormularioCadastro from "./components/FormularioCadastro";
 import ListaDeCategorias from "./components/ListaDeCategorias";
 
+import DadosCategoria from "./database/Categorias";
+import DadosNotas from "./database/Notes";
+
 function App() {
   document.title = "ToDoList";
 
-  const [Notes, setNotes] = useState([]);
-  const [Categorias, setCategorias] = useState(["Trabalho", "Esportes"]);
-
-  function criarNota(titulo, nota) {
-    var NovaNota = { titulo: titulo, nota: nota };
-    var NovoArrayNotas = [...Notes, NovaNota];
-    setNotes(NovoArrayNotas);
-  }
-
-  function deletarNota(index) {
-    var NewNotas = Notes.slice(); //copiar elementos sem referencia
-    NewNotas.splice(index, 1); //remove elemento
-    setNotes(NewNotas);
-  }
-
-  function adicionarCategoria(_Categoria) {
-    var NovaCategoria = _Categoria;
-    var NovoArrayCategoria = [...Categorias, NovaCategoria];
-    setCategorias(NovoArrayCategoria);
-  }
+  const [Categorias, adicionarCategoria] = new DadosCategoria();
+  const [Notes, deletarNota, criarNota] = new DadosNotas();
 
   return (
     <section className="wrapper">
-      <FormularioCadastro criarNota={criarNota}></FormularioCadastro>
+      <FormularioCadastro
+        Categorias={Categorias}
+        criarNota={criarNota}
+      ></FormularioCadastro>
       <div className="conteudo">
         <ListaDeCategorias
           Categorias={Categorias}

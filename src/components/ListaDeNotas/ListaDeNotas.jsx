@@ -19,6 +19,7 @@ function ListaDeNotas({notes_array, deletarNota}) {
                   deletarNota={deletarNota}
                   nota={element.nota}
                   titulo={element.titulo}
+                  categoria={element.categoria}
                 ></Nota>
               </li>
             );
