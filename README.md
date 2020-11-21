@@ -1,9 +1,9 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App] (https://create-react-app.dev/).
 
 <h4 align="center">
-    <img alt="ToDoGif" title="ToDoReactJSf" src="./demonstração.gif" width="750px" />
+    <img alt="ToDoGif" title="ToDoReactJSf" src="./src/assets/demonstração.gif" width="750px" />
 </h4>
 
 ## Available Scripts
