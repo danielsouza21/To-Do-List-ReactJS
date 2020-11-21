@@ -12,17 +12,16 @@ function App() {
   const [Notes, setNotes] = useState([]);
 
   function criarNota(titulo, nota) {
-    let aux = Notes;
-    aux.push({ titulo: titulo, nota: nota });
-
-    setNotes(aux);
+    var NovaNota = { titulo: titulo, nota: nota };
+    var NovoArrayNotas = [...Notes, NovaNota];
+    setNotes(NovoArrayNotas);
   }
 
   return (
-    <div className="App">
+    <section className="conteudo">
       <FormularioCadastro criarNota={criarNota}></FormularioCadastro>
       <ListaDeNotas notes_array={Notes}></ListaDeNotas>
-    </div>
+    </section>
   );
 }
 

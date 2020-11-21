@@ -9,7 +9,7 @@ function Nota({tipo, nota, titulo}) {
   return (
     <section>
       <div className={classNames("nota__wrapper", tipo)}>
-        <header>
+        <header class="nota__cabecalho">
           <h3>{titulo}</h3>
         </header>
         <p>{nota}</p>

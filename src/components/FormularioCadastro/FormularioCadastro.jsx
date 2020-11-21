@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import classNames from "classnames";
 
 import "./FormularioCadastro.css"
 
@@ -24,13 +23,11 @@ function FormularioCadastro({criarNota}) {
     const [Text_note, setText_note] = useState("");
 
   return (
-    <div className={classNames("cadastro__wrapper")}>
       <form className="formulario">
         <input type="text" placeholder="Titulo" onChange={handleTitleChange}></input>
         <textarea placeholder="Escreva sua nota" onChange={handleTextChange}></textarea>
         <button onClick={SubmitClick}>Criar nota</button>
       </form>
-    </div>
   );
 }
 

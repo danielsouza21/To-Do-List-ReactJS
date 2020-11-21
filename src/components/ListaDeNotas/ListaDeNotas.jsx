@@ -6,7 +6,8 @@ import "./ListaDeNotas.css"
 
 // import { Container } from './styles';
 
-function ListaDeNotas({notes_array}) {
+function ListaDeNotas({notes_array}) {  
+
     function RenderNotas(notes){
         let id = 1;
         let components = [];
@@ -18,11 +19,10 @@ function ListaDeNotas({notes_array}) {
         return components;
     }
 
-  return <div className="lista__wrapper">
+  return(
       <ul id="plot-notas">
         {RenderNotas(notes_array)}
       </ul>
-  </div>;
-}
+  )}
 
 export default ListaDeNotas;
