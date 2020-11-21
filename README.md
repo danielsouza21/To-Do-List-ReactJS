@@ -1,6 +1,4 @@
-# Getting Started with ReactJS App
-
-This project was bootstrapped with [Create React App] (https://create-react-app.dev/).
+# Getting Started with ReactJS App (jsx)
 
 <h4 align="center">
     <img alt="ToDoGif" title="ToDoReactJSf" src="./src/assets/demonstração.gif" width="750px" />
