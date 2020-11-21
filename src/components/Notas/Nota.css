@@ -22,7 +22,16 @@ h3 {
   margin-right: 12px;
 }
 
+h4 {
+  font-size: 0.8em;
+  margin: 0 10px;
+}
+
 p {
   margin-top: 8px;
   font-size: 1em;
+}
+
+.pointer {
+  cursor: pointer;
 }

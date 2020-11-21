@@ -12,13 +12,14 @@ This project was bootstrapped with [Create React App](https://create-react-app.d
 
 Orientação de estudos seguindo [documentação oficial](https://pt-br.reactjs.org/docs/getting-started.html)
 
-* Componentes e renderização
-* Propriedades
-* States e ciclo de vida do componentes
-* Renderização condicional (foreach)
-* Elevação de states
-* Forms no React
-* Hooks (useState)
+- Componentes e renderização
+- Propriedades de componentes
+- States e ciclo de vida do componentes
+- Renderização condicional (foreach)
+- Elevação de states
+- Componentes Stateless e Statefull
+- Forms no React
+- Hooks (useState e useEffect)
 
 ### `yarn start`
 
