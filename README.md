@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with ReactJS App
 
 This project was bootstrapped with [Create React App] (https://create-react-app.dev/).
 
@@ -6,9 +6,19 @@ This project was bootstrapped with [Create React App] (https://create-react-app.
     <img alt="ToDoGif" title="ToDoReactJSf" src="./src/assets/demonstração.gif" width="750px" />
 </h4>
 
-## Available Scripts
+This project was bootstrapped with [Create React App](https://create-react-app.dev/).
 
-In the project directory, you can run:
+## Topicos estudados:
+
+Orientação de estudos seguindo [documentação oficial](https://pt-br.reactjs.org/docs/getting-started.html)
+
+* Componentes e renderização
+* Propriedades
+* States e ciclo de vida do componentes
+* Renderização condicional (foreach)
+* Elevação de states
+* Forms no React
+* Hooks (useState)
 
 ### `yarn start`
 
